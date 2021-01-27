@@ -4,11 +4,11 @@ Aplicação de Crawling em uma Página Web com Scrapy e Python 3.
 * Site utilizado para extração de dados: https://www.climatempo.com.br/previsao-do-tempo/agora/cidade/558/saopaulo-sp
 
 
-## Criando Ambiente Virtual para depedências.
+#### Criando Ambiente Virtual para depedências.
 -- Criando Ambiente: py -m venv weather_forecast_venv.   
 -- Ativando Ambiente: .\weather_forecast_venv\scripts\activate.
 
-### Instalando Depedências.
+#### Instalando Depedências.
 -- Instalando o scrapy: pip install scrapy.
 
 #### Criando Configurações do Gerenciador de depedências.
