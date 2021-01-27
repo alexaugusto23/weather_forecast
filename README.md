@@ -10,6 +10,7 @@ Aplicação de Crawling em uma Página Web com Scrapy e Python 3.
 
 #### Instalando Depedências.
 -- Instalando o scrapy: pip install scrapy.
+-- Instalando o flsk: pip install flask
 
 #### Criando Configurações do Gerenciador de depedências.
 -- Criando arquivo de configurações: pip freeze > requirements.txt
@@ -46,6 +47,8 @@ CREATE TABLE [IF NOT EXISTS] weather (
 	horario_created_on TIMESTAMP NOT NULL,
     
 );
+
+
 
 
 
