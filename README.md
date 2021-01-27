@@ -12,7 +12,10 @@ Aplicação de Crawling em uma Página Web com Scrapy e Python 3.
 -- Instalando o scrapy: pip install scrapy.
 
 #### Criando Configurações do Gerenciador de depedências.
--- Criando arquivo de configurações: pip freeze > requirements.txt	
+-- Criando arquivo de configurações: pip freeze > requirements.txt
+
+#### Criando o projeto.
+Comando para criar o projeto: scrapy startproject weather_forecast
 
 #### Criando Estruturas de dados.
 Mongodb
