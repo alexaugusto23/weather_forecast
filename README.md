@@ -27,7 +27,7 @@ db.weather.insert(
     pressao: "",
     vento:  "",
     horario: ""
-}
+})
 
 PostgreSQL ou outro BD Relacional SQL.
 
