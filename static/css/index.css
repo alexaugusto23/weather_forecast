@@ -27,6 +27,7 @@ body
     margin-bottom: 1%;
     background-color: cornflowerblue;
     border-radius: 5px;
+    border: #2c3e49;
 }
 
 .container-title img
@@ -56,6 +57,7 @@ body
     align-items: center;
     text-align: center;
     border-radius: 5px;
+    border: #2c3e49;
     background-color: #f8f8f8;
 
     
@@ -97,12 +99,15 @@ body
     margin: 10px;
 }
 
-.container-unified-box
+.table
 {
     color: #5f6c76;
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px;
     padding-right: 10px;
+    text-align: center;
+    align-items:center;
+    justify-content: space-between;
 
 
 }
@@ -111,6 +116,8 @@ body
 {
     color: #5f6c76;
     font-size: 30px;
-    margin: 10px;
+    margin: 0px 25px 10px 25px; /*top-right-bottom-left*/
+    align-content: space-between;
+    
 }
 

@@ -13,15 +13,25 @@
             <h1>Weather Crawler</h1>
         </div>
         <div class="container-content">
-            <div class="container-box1">Tempo agora em: cidade</div>
-            <div class="container-box2">29°</div>
+            <div class="container-box1">Tempo agora em: {{ cidade }}</div>
+            <div class="container-box2">{{ temperatura }}°</div>
             <div class="container-unified">
-                <div class="container-unified-box">sensacao</div>
-                <div class="container-unified-box">umidade</div>
-                <div class="container-unified-box">pressao</div>
-                <div class="container-unified-box">vento</div>
+                <table class="table">
+                    <tr>
+                      <th>Sensação</th>
+                      <th>Umidade</th>
+                      <th>Pressão</th>
+                      <th>Vento</th>
+                    </tr>
+                    <tr>
+                      <td>{{ sensacao  }}</td>
+                      <td>{{ umidade  }}</td>
+                      <td>{{ pressao  }}</td>
+                      <td>{{ vento  }}</td>
+                    </tr>
+                    </table>
             </div>
-            <div class="container-box3">15 minustos</div>
+            <div class="container-box3">{{ horario }}</div>
         </div>
     </body>
 </html>
