@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS weather (
+    weather_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	cidade VARCHAR ( 100 ) UNIQUE NOT NULL,
+    temperatura VARCHAR ( 4 ) UNIQUE NOT NULL,
+    previsao VARCHAR ( 30) UNIQUE NOT NULL,
+    sensacao VARCHAR ( 4 ) UNIQUE NOT NULL,
+    umidade VARCHAR ( 4 ) UNIQUE NOT NULL,
+    pressao VARCHAR ( 10 ) UNIQUE NOT NULL,
+    vento VARCHAR ( 10 ) UNIQUE NOT NULL,
+	horario_created_on TIMESTAMP NOT NULL
+);
+
+SELECT * FROM weather;
