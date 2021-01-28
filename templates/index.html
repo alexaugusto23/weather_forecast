@@ -14,8 +14,11 @@
         </div>
         <div class="container-content">
             <div class="container-box1">Tempo agora em: {{ cidade }}</div>
-            <div class="container-box2">{{ temperatura }}°</div>
-            <div class="container-unified">
+            <div class="container-unified1">
+                <div class="container-box4">{{ previsao }}</div>
+                <div class="container-box2">{{ temperatura }}°</div>  
+            </div>
+            <div class="container-unified2">
                 <table class="table">
                     <tr>
                       <th>Sensação</th>
@@ -24,10 +27,10 @@
                       <th>Vento</th>
                     </tr>
                     <tr>
-                      <td>{{ sensacao  }}</td>
-                      <td>{{ umidade  }}</td>
-                      <td>{{ pressao  }}</td>
-                      <td>{{ vento  }}</td>
+                      <td>{{ sensacao  }}°</td>
+                      <td>{{ umidade  }}%</td>
+                      <td>{{ pressao  }}hPa</td>
+                      <td>{{ vento  }}km/h</td>
                     </tr>
                     </table>
             </div>

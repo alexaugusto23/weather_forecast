@@ -18,15 +18,17 @@ def index():
     id_scrapy = 1,
     cidade = "São-Paulo"
     temperatura = "28"
+    previsao = "Alguma Nebulosidade"
     sensacao = "30"
-    umidade = "82%"
-    pressao = "924 hpa"
-    vento = "19 km/h"
-    horario = "2021-01-27"
+    umidade = "82"
+    pressao = "924"
+    vento = "19"
+    horario = "11:47"
 
     return render_template("index.html", 
                             cidade=cidade, 
                             temperatura=temperatura, 
+                            previsao=previsao,
                             sensacao=sensacao,
                             umidade=umidade,
                             pressao=pressao,
@@ -41,7 +43,7 @@ def admin():
 @app.route('/users', methods=['GET', 'POST'])
 def users():
     cur = mysql.connection.cursor()
-    cur.execute('''SELECT * FROM teste''')
+    cur.execute('''SELECT * FROM weather''')
     rv = cur.fetchall()
     cur.close()
     return str(rv)
