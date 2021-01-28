@@ -5,7 +5,7 @@ from flask import Flask, render_template , redirect, url_for,request
 app = Flask(__name__)
 
 app.config['MYSQL_USER'] = 'adminMaster'
-app.config['MYSQL_PASSWORD'] = 'Music2989#'
+app.config['MYSQL_PASSWORD'] =
 app.config['MYSQL_HOST'] = 'database-sql.c0ymnqcdkbj5.us-east-2.rds.amazonaws.com'
 app.config['MYSQL_DB'] = 'dbmysql'
 
