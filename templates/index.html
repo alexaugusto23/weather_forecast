@@ -12,14 +12,17 @@
             <img src="/static/img/weather.png" alt="weather">
             <h1>Weather Crawler</h1>
         </div>
+        {% for i in dataindex %}
+        <!--{{ i }} -->
         <div class="container-content">
-            <div class="container-box1">Tempo agora em: {{ cidade }}</div>
+            <div class="container-box1">Tempo agora em: {{ i[1] }}</div>
             <div class="container-unified1">
-                <div class="container-box4">{{ previsao }}</div>
-                <div class="container-box2">{{ temperatura }}°</div>  
+                <div class="container-box4">{{ i[3] }}</div>
+                <div class="container-box2">{{ i[2] }}°</div>  
             </div>
             <div class="container-unified2">
                 <table class="table">
+                    
                     <tr>
                       <th>Sensação</th>
                       <th>Umidade</th>
@@ -27,14 +30,16 @@
                       <th>Vento</th>
                     </tr>
                     <tr>
-                      <td>{{ sensacao  }}°</td>
-                      <td>{{ umidade  }}%</td>
-                      <td>{{ pressao  }}hPa</td>
-                      <td>{{ vento  }}km/h</td>
+                      <td>{{ i[4]  }}°</td>
+                      <td>{{ i[5]  }}%</td>
+                      <td>{{ i[6]  }}hPa</td>
+                      <td>{{ i[7]  }}km/h</td>
                     </tr>
                     </table>
             </div>
-            <div class="container-box3">Atualizado em: {{ horario }}</div>
+            <div class="container-box3">Atualizado em: {{ i[8] }}</div>
         </div>
+        {% endfor %}
+        <a href="/dados" ><button class="button-dados">Dados</button></a> 
     </body>
 </html>

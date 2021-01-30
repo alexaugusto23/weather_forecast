@@ -15,6 +15,9 @@ Aplicação de Crawling em uma Página Web com Scrapy e Python 3.
 -- pip install mysql-connector-python
 -- pip install requests
 
+####
+-- Comando para gerar arquivo json: scrapy crawl weather -o weather.json 
+
 #### Criando Configurações do Gerenciador de depedências.
 -- Criando arquivo de configurações: pip freeze > requirements.txt
 

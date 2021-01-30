@@ -27,4 +27,33 @@ INSERT INTO weather
 (cidade, temperatura, previsao, sensacao, umidade, pressao, vento) 
 VALUES
     ('São Paulo','28', 'Alguma nebolusidade', '29', '55', '1010', '15');
+
+INSERT INTO weather 
+(cidade, temperatura, previsao, sensacao, umidade, pressao, vento) 
+VALUES
+    ('São Paulo','30', 'Alguma nebolusidade', '29', '55', '1010', '15');
+
+INSERT INTO weather 
+(cidade, temperatura, previsao, sensacao, umidade, pressao, vento) 
+VALUES
+    ('São Paulo','29', 'Poucas Nuvens', '29', '45', '1012', '19');
+
+INSERT INTO weather 
+(cidade, temperatura, previsao, sensacao, umidade, pressao, vento) 
+VALUES
+    ('São Paulo','18', 'Chuva', '17', '90', '1050', '30');
+    
+INSERT INTO weather 
+(cidade, temperatura, previsao, sensacao, umidade, pressao, vento) 
+VALUES
+    ('São Paulo','40', 'Ensolarado', '42', '30', '900', '20');
+
+INSERT INTO weather 
+(cidade, temperatura, previsao, sensacao, umidade, pressao, vento) 
+VALUES
+    ('São Paulo','50', 'Super - Ensolarado', '52', '20', '800', '25');
+
+SELECT * FROM weather;
+
+TRUNCATE TABLE weather;
     

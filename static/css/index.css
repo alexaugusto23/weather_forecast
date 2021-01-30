@@ -90,6 +90,16 @@ body
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.container-data-unified2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
 
 }
 
@@ -114,6 +124,18 @@ body
 {
     width: 100%;
     color: #5f6c76;
+    font-size: 20px;
+    margin: 10px;
+    padding-right: 10px;
+    text-align: center;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.table-data
+{
+    width: 100%;
+    color: white;
     font-size: 20px;
     margin: 10px;
     padding-right: 10px;
@@ -153,3 +175,20 @@ body
     padding-left: 10px;
 }
 
+.button-dados
+{   
+    width: 80px;
+    height: 40px;
+    background-color: cornflowerblue;
+    margin: 15px;
+    border-color: transparent;
+    color: white;
+    border-radius: 3px;
+}
+
+.button-dados:hover
+{
+    color: white;
+    background-color: gainsboro;
+    border: 2px #005255 solid;
+}

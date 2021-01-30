@@ -1,0 +1,20 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    background-color: #273742;
+    color: white;
+    font-size: 25px;
+}
