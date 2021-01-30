@@ -16,7 +16,9 @@ Aplicação de Crawling em uma Página Web com Scrapy e Python 3.
 -- pip install requests
 
 ####
+-- deletar o json antigo e gerar um novo no path: '\weather_forecast\weather_forecast\weather.json'
 -- Comando para gerar arquivo json: scrapy crawl weather -o weather.json 
+
 
 #### Criando Configurações do Gerenciador de depedências.
 -- Criando arquivo de configurações: pip freeze > requirements.txt

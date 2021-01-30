@@ -27,8 +27,8 @@ def dados():
     data = cur.fetchall()
     return render_template("dados.html", data = data)
 
+
 @app.route('/insert', methods=['GET', 'POST'])
-@app.route('/', methods=['GET', 'POST'])
 def insert():
     with open ('.\weather_forecast\weather_forecast\weather.json','r', encoding='utf-8') as arquivo_json:
         dados_json = json.load(arquivo_json)       
