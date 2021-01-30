@@ -3,6 +3,8 @@ Aplicação de Crawling em uma Página Web com Scrapy e Python 3.
 
 * Site utilizado para extração de dados: https://www.climatempo.com.br/previsao-do-tempo/agora/cidade/558/saopaulo-sp
 
+Link da aplicação: https://weather-crawler.azurewebsites.net
+
 
 #### Criando Ambiente Virtual para depedências.
 -- Criando Ambiente: py -m venv weather_forecast_venv.   
