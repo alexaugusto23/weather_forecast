@@ -192,3 +192,58 @@ body
     background-color: gainsboro;
     border: 2px #005255 solid;
 }
+
+@media(max-width: 748px)
+{
+
+    .container-title
+    {
+        width: fit-content;
+        font-size: 25%;
+    }
+
+    .container-content
+    {
+        width: fit-content;
+        font-size: 15%;
+    }
+
+    .container-unified2
+    {
+        width: fit-content;
+        font-size: 5%;
+        display: block;
+        position: relative;
+        width: fit-content;
+    }
+
+    .table
+    {
+        width: fit-content;
+        font-size: 5%;
+    }
+
+}
+
+@media(max-width: 600px)
+{
+
+    .container-title
+    {
+        width: fit-content;
+        font-size: 20%;
+    }
+
+    .container-content
+    {
+        width: fit-content;
+        font-size: 10%;
+    }
+
+    .container-unified2
+    {
+        width: fit-content;
+        font-size: 5%;
+    }
+
+}
