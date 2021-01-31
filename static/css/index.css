@@ -211,16 +211,11 @@ body
     .container-unified2
     {
         width: fit-content;
-        font-size: 10%;
-        display: block;
-        position: relative;
-        width: fit-content;
     }
 
     .table
     {
         width: fit-content;
-        font-size: 30%;
     }
 
 }
@@ -243,7 +238,6 @@ body
     .container-unified2
     {
         width: fit-content;
-        font-size: 30%;
     }
 
 }
