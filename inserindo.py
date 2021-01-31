@@ -1,12 +1,18 @@
 import json
 import MySQLdb
 import os
+import time
 
 mysql = MySQLdb.Connection(user='adminMaster', passwd='Mag#2923', host='database-sql.c0ymnqcdkbj5.us-east-2.rds.amazonaws.com', db='dbmysql')
 
 def insert():
+    time.sleep(10)
+    path = os.getcwd()
+    os.chdir(path+'/weather_forecast/weather_forecast/')
+    path = os.getcwd()
+    conc = path+'/weather.json'
 
-    with open ('./weather_forecast/weather_forecast/weather.json','r', encoding='utf-8') as arquivo_json:
+    with open (conc,'r', encoding='utf-8') as arquivo_json:
         dados_json = json.load(arquivo_json)       
 
         cidade =dados_json[0]['cidade']
@@ -15,7 +21,7 @@ def insert():
         sensacao = dados_json[0]['sensacao'][11:13]
         umidade = dados_json[0]['umidade'][0:2]
         pressao = dados_json[0]['pressao'][0:4]
-        vento = dados_json[0]['vento'][6:7]
+        vento = dados_json[0]['vento'][7:9]
         
         cur = mysql.cursor()
         cur.execute('''INSERT INTO weather(cidade, temperatura, previsao, sensacao, umidade, pressao, vento) VALUES (%s, %s, %s, %s, %s, %s, %s)''', (cidade, temperatura, previsao, sensacao, umidade, pressao, vento))

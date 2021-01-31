@@ -1,14 +1,15 @@
 import os
 from os import path
+import time 
 
 def shellpath():
     path = os.getcwd()
-    #print(path)
     os.chdir(path+'/weather_forecast/weather_forecast/')
     path = os.getcwd()
-    #print(path)
+    print(path)
     os.system("scrapy crawl weather -o weather.json")
     os.system("cls")
+
 
 #shellpath()
 '''

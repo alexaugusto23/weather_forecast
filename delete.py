@@ -14,4 +14,4 @@ def deletar():
                 os.remove(file_path)
             else: print("file não encontrado")
 
-#deletar()
+deletar()

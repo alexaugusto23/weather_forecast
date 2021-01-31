@@ -6,7 +6,7 @@ def ler_json():
             return dados_json
 
 x = ler_json()
-print(x[0]['vento'][7:8])
+print(x[0]['vento'][6:9])
 
 '''
 
