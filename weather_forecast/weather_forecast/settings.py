@@ -11,7 +11,7 @@ BOT_NAME = 'weather_forecast'
 
 SPIDER_MODULES = ['weather_forecast.spiders']
 NEWSPIDER_MODULE = 'weather_forecast.spiders'
-
+FEED_EXPORT_ENCODING= 'utf-8'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'weather_forecast (+http://www.yourdomain.com)'

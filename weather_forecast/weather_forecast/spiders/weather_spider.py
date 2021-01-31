@@ -1,13 +1,10 @@
-import logging
-from urllib import parse
 import scrapy
-from scrapy.selector.unified import _response_from_text
 
 class Weather(scrapy.Spider):
     name = "weather"
     start_urls = ['https://www.climatempo.com.br/previsao-do-tempo/agora/cidade/558/saopaulo-sp']
 
-    def parse(self, response, encode='utf-8'):
+    def parse(self, response):
         yield{            
             'cidade': response.css('span::text')[26].get(), 
             'temperatura': response.css('span::text')[29].get(), 

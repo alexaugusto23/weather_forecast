@@ -1,6 +1,8 @@
 USE dbmysql;
 SHOW DATABASES;
 
+SET time_zone='America/Sao_Paulo';
+
 CREATE TABLE IF NOT EXISTS weather (
     weather_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	cidade VARCHAR ( 100 ) NOT NULL,
@@ -53,7 +55,6 @@ INSERT INTO weather
 VALUES
     ('São Paulo','50', 'Super - Ensolarado', '52', '20', '800', '25');
 
-SELECT * FROM weather;
-
 TRUNCATE TABLE weather;
     
+SELECT * FROM weather;
