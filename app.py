@@ -2,9 +2,9 @@ from flask import Flask
 from flask import render_template
 from flask import redirect 
 from flask import url_for
-from flask import request
 import os 
 import MySQLdb
+
 
 app = Flask(__name__)
 
@@ -27,6 +27,11 @@ def dados():
     cur.execute('''SELECT * FROM weather ORDER BY weather_id  ''')
     data = cur.fetchall()
     return render_template("dados.html", data = data)
+
+@app.route('/eventos', methods=['GET', 'POST'])
+def eventos():
+    
+    return 'shell criada'
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
