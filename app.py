@@ -34,8 +34,8 @@ def dados():
     mysql.cursor().close()
     return render_template("dados.html", data = data)
 
-@app.route("/loop", methods=['GET', 'POST'])
-def loop():
+@app.route("/scrapy", methods=['GET', 'POST'])
+def scrapy():
 
     #Deletando e criando json
     chdir = os.chdir("C:/git/weather_forecast")
