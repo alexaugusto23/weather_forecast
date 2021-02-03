@@ -5,10 +5,9 @@ from flask import url_for
 import json
 import os 
 import MySQLdb
+import time
 
 app = Flask(__name__)
-
-light_on = False
 
 mysql = MySQLdb.Connection(user='adminMaster', passwd='Mag#2923', host='database-sql.c0ymnqcdkbj5.us-east-2.rds.amazonaws.com', db='dbmysql')
 
@@ -91,7 +90,7 @@ def scrapy():
         mysql.cursor().close()
         arquivo_json.close()
 
-    return render_template("srcapy.html", msg = "Scrapy com sucesso!!!")
+    return render_template("scrapy.html", msg = "Scrapy com sucesso!!!")
 
 
 
