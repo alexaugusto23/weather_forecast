@@ -177,19 +177,22 @@ body
 
 .button-dados
 {   
-    width: 80px;
+    margin-bottom: 10px;
+    width: 160px;
     height: 40px;
     background-color: cornflowerblue;
     margin: 15px;
     border-color: transparent;
     color: white;
     border-radius: 3px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .button-dados:hover
 {
     color: white;
-    background-color: gainsboro;
+    background-color:#326a748a;
     border: 2px #005255 solid;
 }
 

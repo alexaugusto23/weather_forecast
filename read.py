@@ -5,10 +5,25 @@ def ler_json():
             dados_json = json.load(arquivo_json)
             return dados_json
 
-x = ler_json()
-xx = x[0]['vento'].split()
-xx = xx[2][0:2]
-print(xx)
+generic = ler_json()
+vento = generic[0]['vento'].split()
+valor = vento[2][0] + vento[2][1]
+elementos = list(valor)
+print(elementos)
+low = elementos[1].lower()
+print(low)
+if 'k' in elementos[1].lower():
+    valor_test = elementos.pop(0)
+    print(valor_test)
+    vento_test = valor_test 
+    print(True)
+else:
+    valor_test = elementos[0] + elementos[1]
+    vento_test = valor_test 
+    print(False)
+print(vento_test)
+
+
 
 '''
 

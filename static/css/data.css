@@ -18,3 +18,33 @@ body
     color: white;
     font-size: 25px;
 }
+
+.button-voltar
+{   
+    width: 160px;
+    height: 40px;
+    background-color: green;
+    margin: 15px;
+    border-color: transparent;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button-voltar:hover
+{
+    margin-top: 10px;
+    color: white;
+    background-color: #326a748a;
+    border: 2px #005255 solid;
+}
+
+@media(max-width: 750px)
+{
+    .body
+    {
+        padding: 30% ;
+        text-align: center;
+    }
+}
