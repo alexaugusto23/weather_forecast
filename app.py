@@ -37,7 +37,7 @@ def dados():
 def scrapy():
 
     #Deletando e criando json
-    os.chdir("https://weather-crawler.scm.azurewebsites.net/wwwroot/weather_forecast/")
+    os.chdir("https://weather-crawler.scm.azurewebsites.net/scrapy/wwwroot/weather_forecast/")
     path = os.getcwd()
     path1 = os.path.join(path,"weather_forecast")
     path2 = os.path.join(path1,"weather_forecast")
