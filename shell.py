@@ -7,16 +7,12 @@ def shellpath():
     path = os.getcwd()
     path1 = os.path.join(path,"weather_forecast")
     path2 = os.path.join(path1,"weather_forecast")
-    print(f'path1: {path}')
-    print(f'path1: {path1}')
+    
     print(f'path2: {path2}')
-    os.chdir(path2)
+    chdir = os.chdir(path2)
     path_file = os.path.join(path2,"weather.json")
     print(path_file)
-    for root, dirs, files in os.walk("c", topdown=False):
-        for dir in dirs:
-            print(os.path.join(root, dir))
-
+    for root, dirs, files in os.walk(".", topdown=False):
         for file_name in files:
             #print(os.path.join(root, file_name))
             if "weather.json" == file_name:
@@ -26,7 +22,8 @@ def shellpath():
             else:
                 print("Criando weather.json")
     os.system("scrapy crawl weather -o weather.json")
-    os.system("cls")
+    
+    #os.system("cls")
 
 
 shellpath()

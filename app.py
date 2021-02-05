@@ -37,15 +37,13 @@ def dados():
 def scrapy():
 
     #Deletando e criando json
-    chdir = os.chdir("C:/git/weather_forecast")
+
     path = os.getcwd()
     path1 = os.path.join(path,"weather_forecast")
     path2 = os.path.join(path1,"weather_forecast")
-    print(f'path1: {path}')
-    print(f'path1: {path1}')
+    
     print(f'path2: {path2}')
     chdir = os.chdir(path2)
-    print(f'Chdir: {chdir}')
     path_file = os.path.join(path2,"weather.json")
     print(path_file)
     for root, dirs, files in os.walk(".", topdown=False):
@@ -59,7 +57,8 @@ def scrapy():
                 print("Criando weather.json")
     os.system("scrapy crawl weather -o weather.json")
     
-    os.system("cls")
+    #os.system("cls")
+
 
     #Inserindo no banco de dados
     get_path_atual = os.getcwd()+"/weather.json"
@@ -90,7 +89,7 @@ def scrapy():
         mysql.cursor().close()
         arquivo_json.close()
 
-    return render_template("scrapy.html", msg = "Scrapy com sucesso!!!")
+    return render_template("scrapy.html", msg = "Scrapy com sucesso!!!", path = path)
 
 
 
