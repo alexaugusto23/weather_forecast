@@ -38,7 +38,7 @@ def scrapy():
 
     #Deletando e criando json
 
-    os.chdir("home/site/wwwroot")
+    #os.chdir("home/site/wwwroot")
     path = os.getcwd()
     path1 = os.path.join(path,"weather_forecast")
     path2 = os.path.join(path1,"weather_forecast")
