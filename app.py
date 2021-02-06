@@ -38,8 +38,6 @@ def scheduled_Task():
     Spider.scriptscrapy()
 
 
-scheduled_Task()
-
 if __name__ == '__main__':
     scheduler = APScheduler()
     scheduler.add_job(id = 'ScheduledTask', func = scheduled_Task, trigger = 'interval', seconds = 60)
