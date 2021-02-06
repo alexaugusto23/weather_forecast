@@ -24,12 +24,14 @@ class Spider:
                 if "weather.json" == file_name:
                     print(True)
                     os.remove(path_file)
-                    print("Arquivo Removido")
+                    print("-"*80)
+                    print("Arquivo weather.json removido.......")
                 else:
                     print("Criando weather.json")
         os.system("scrapy crawl weather -o weather.json")
-        
-        #os.system("cls")
+        os.system("cls")
+        print("-"*80)
+        print("Criação do weather.json concluído.......")
 
 
         #Inserindo no banco de dados
@@ -60,3 +62,5 @@ class Spider:
             mysql.commit()
             mysql.cursor().close()
             arquivo_json.close()
+            print("-"*80)
+            print("Insert no DB concluído.......")
