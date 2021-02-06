@@ -9,7 +9,6 @@ from flask_apscheduler import APScheduler, scheduler
 from dados import Dados
 
 app = Flask(__name__)
-scheduler = APScheduler()
 
 #routes
 @app.route("/")
@@ -42,7 +41,8 @@ def scheduled_Task():
 scheduled_Task()
 
 if __name__ == '__main__':
-    scheduler.add_job(id = 'Scheduled Task', func = scheduled_Task, trigger = 'interval', seconds = 60)
+    scheduler = APScheduler()
+    scheduler.add_job(id = 'ScheduledTask', func = scheduled_Task, trigger = 'cron', minute = 1)
     scheduler.start()
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
