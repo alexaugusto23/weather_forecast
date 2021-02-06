@@ -12,10 +12,11 @@ Link da aplicação: https://weather-crawler.azurewebsites.net/index
 
 #### Instalando Depedências.
 -- Instalando o scrapy: pip install scrapy.
--- Instalando o flsk: pip install flask
--- pip install Flask-MySQLdb
--- pip install mysql-connector-python
--- pip install requests
+-- Instalando o flask: pip install flask
+-- Instalando mysql para flask: pip install Flask-MySQLdb
+-- Instalando o conector mysql: pip install mysql-connector-python
+-- Instalando requests: pip install requests
+-- Instalando o Flask-APScheduler para rotinas: pip install Flask-APScheduler
 
 ####
 -- deletar o json antigo e gerar um novo no path: '\weather_forecast\weather_forecast\weather.json'
